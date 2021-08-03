@@ -31,9 +31,6 @@ async def send_photo(msg: types.Message):
     await bot.send_message(msg.from_user.id, 'https://ru.savefrom.net/7/#url=' + msg['reply_to_message']['text'])
 
 
-
-
-
 @dp.message_handler()
 async def result(msg: types.Message):
     await bot.send_message(msg.from_user.id, 'Идёт поиск')
